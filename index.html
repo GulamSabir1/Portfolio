@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FIX: Added meta description and OG tags for SEO -->
+  <meta name="description" content="Gulam Sabir — Aspiring Full-Stack Web Developer and MCA student. Skilled in React.js, Node.js, Java, SQL, and more. Open to internships.">
+  <meta property="og:title" content="Gulam Sabir — Full Stack Developer">
+  <meta property="og:description" content="Portfolio of Gulam Sabir, an aspiring Full-Stack Developer and MCA student from Lucknow.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#6c63ff">
+
+  <title>Gulam Sabir — Full Stack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="glow-blob glow-1" aria-hidden="true"></div>
+  <div class="glow-blob glow-2" aria-hidden="true"></div>
+  <div class="glow-blob glow-3" aria-hidden="true"></div>
+
+  <!-- FIX: cursor elements hidden from assistive tech -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-trail" id="cursorTrail" aria-hidden="true"></div>
+
+  <!-- FIX: Added role="navigation" and aria-label; aria-expanded on hamburger -->
+  <nav role="navigation" aria-label="Main navigation">
+    <a href="#hero" class="nav-logo" aria-label="Gulam Sabir — Home">GS</a>
+    <ul class="nav-links" role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+    </ul>
+    <!-- FIX: aria-expanded + aria-controls for accessibility -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- FIX: aria-label on mobile menu, role="dialog" for overlay -->
+  <div class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation" role="dialog" aria-modal="true" aria-hidden="true">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#certifications" class="mobile-link">Certs</a>
+    <a href="#education" class="mobile-link">Education</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <section id="hero" aria-label="Introduction">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge" aria-live="polite">
+          <span class="dot" aria-hidden="true"></span>
+          Available for Internship
+        </div>
+        <h1 class="hero-name">
+          Gulam<br><span class="highlight">Sabir</span>
+        </h1>
+        <!-- FIX: aria-live so screen readers announce typing changes -->
+        <p class="hero-role" aria-live="polite" aria-label="Current role">Full-Stack Developer &amp; MCA Student</p>
+        <p class="hero-desc">
+          Aspiring developer passionate about building responsive web applications that solve real-world problems. Skilled in modern web technologies with hands-on experience through industry simulations.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">✉ Get in Touch</a>
+          <a href="#projects" class="btn-outline">⚡ View Projects</a>
+        </div>
+        <div class="hero-stats" role="list" aria-label="Key statistics">
+          <div class="stat-card" role="listitem">
+            <div class="stat-num">5+</div>
+            <div class="stat-label">Certifications</div>
+          </div>
+          <div class="stat-card" role="listitem">
+            <div class="stat-num">3+</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="stat-card" role="listitem">
+            <div class="stat-num">4</div>
+            <div class="stat-label">Job Simulations</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="avatar-ring">
+          <div class="avatar-inner">
+            <img src="photo/sabit.jpeg" alt="Gulam Sabir" class="avatar-photo">
+          </div>
+          <div class="floating-tags">
+            <span class="float-tag">⚛️ React.js</span>
+            <span class="float-tag">🟢 Node.js</span>
+            <span class="float-tag">☕ Java</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" aria-label="About me">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">About Me</span>
+        <h2 class="section-title">The Developer Behind the Code</h2>
+        <p class="section-sub">Building digital experiences with purpose, precision, and passion.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm <strong>Gulam Sabir</strong>, an MCA student at Integral University, Lucknow, with a deep passion for web development and software engineering. My journey in tech is driven by curiosity and a constant desire to learn and build.
+          </p>
+          <p>
+            I've gained practical, industry-relevant experience through <strong>job simulations from Skyscanner, Walmart Global Tech, Accenture, GE Aerospace, and AWS</strong> — giving me a real-world edge on top of my academic foundation.
+          </p>
+          <p>
+            I'm seeking an internship where I can contribute, grow, and make meaningful impact through technology.
+          </p>
+
+          <div class="info-list">
+            <div class="info-item">
+              <div class="info-icon" aria-hidden="true">📍</div>
+              <div>
+                <div class="info-key">Location</div>
+                <div class="info-value">Lucknow, Uttar Pradesh, India</div>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon" aria-hidden="true">📞</div>
+              <div>
+                <div class="info-key">Phone</div>
+                <div class="info-value">+91 91205XXXXX</div>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon" aria-hidden="true">🌐</div>
+              <div>
+                <div class="info-key">Languages</div>
+                <div class="info-value">English, Hindi, Urdu</div>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon" aria-hidden="true">🎯</div>
+              <div>
+                <div class="info-key">Looking for</div>
+                <div class="info-value">Web / Front-End Developer Internship</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-cards reveal">
+          <div class="about-card">
+            <div class="about-card-icon" aria-hidden="true">🚀</div>
+            <h3>Frontend Excellence</h3>
+            <p>Crafting responsive, mobile-first interfaces with HTML5, CSS3, JavaScript, and React.js that deliver smooth user experiences.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon" aria-hidden="true">⚙️</div>
+            <h3>Backend Foundations</h3>
+            <p>Building server-side logic with Node.js and Java, integrating databases with SQL for complete full-stack solutions.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon" aria-hidden="true">🏗️</div>
+            <h3>Engineering Mindset</h3>
+            <p>Applying SDLC, Agile methodologies, and software architecture principles learned through real-world industry simulations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" aria-label="Technical skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Skills</span>
+        <h2 class="section-title">Technical Arsenal</h2>
+        <p class="section-sub">A carefully honed toolkit for building modern software.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <div class="skill-category-title"><span aria-hidden="true">🎨</span> Frontend</div>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">Responsive Design</span>
+            <span class="skill-tag">Java</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-category-title"><span aria-hidden="true">⚙️</span> Backend</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">CRUD Operations</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-category-title"><span aria-hidden="true">🗄️</span> Database</div>
+          <div class="skill-tags">
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Relational Design</span>
+            <span class="skill-tag">Data Modeling</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-category-title"><span aria-hidden="true">🛠️</span> Tools &amp; DevOps</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">MS Office</span>
+            <span class="skill-tag">AWS Basics</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-category-title"><span aria-hidden="true">🧠</span> Engineering Practices</div>
+          <div class="skill-tags">
+            <span class="skill-tag">SDLC</span>
+            <span class="skill-tag">Agile</span>
+            <span class="skill-tag">Waterfall</span>
+            <span class="skill-tag">Software Testing</span>
+            <span class="skill-tag">System Design</span>
+            <span class="skill-tag">Algorithmic Thinking</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-category-title"><span aria-hidden="true">💼</span> Core Competencies</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">Communication</span>
+            <span class="skill-tag">Teamwork</span>
+            <span class="skill-tag">Data Structures</span>
+            <span class="skill-tag">Code Debugging</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" aria-label="Projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Projects</span>
+        <h2 class="section-title">Things I've Built</h2>
+        <p class="section-sub">Hands-on projects that demonstrate practical skills and creative thinking.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-num" aria-hidden="true">01</div>
+          <h3 class="project-title">Personal Portfolio Website</h3>
+          <ul class="project-desc">
+            <li>Developed a fully responsive portfolio website showcasing projects and skills.</li>
+            <li>Implemented mobile-first design principles for seamless cross-device experience.</li>
+            <li>Built with clean, semantic HTML and modern CSS techniques.</li>
+          </ul>
+          <div class="project-tech" aria-label="Technologies used">
+            <span class="tech-badge">HTML</span>
+            <span class="tech-badge">CSS</span>
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">Responsive</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-num" aria-hidden="true">02</div>
+          <h3 class="project-title">Student Management System</h3>
+          <ul class="project-desc">
+            <li>Built a robust Java application for comprehensive student data management.</li>
+            <li>Implemented full CRUD operations with database integration.</li>
+            <li>Designed efficient relational schema for student records.</li>
+          </ul>
+          <div class="project-tech" aria-label="Technologies used">
+            <span class="tech-badge">Java</span>
+            <span class="tech-badge">SQL</span>
+            <span class="tech-badge">CRUD</span>
+            <span class="tech-badge">Database</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-num" aria-hidden="true">03</div>
+          <h3 class="project-title">Responsive Landing Page</h3>
+          <ul class="project-desc">
+            <li>Created modern, user-friendly landing pages with clean visual hierarchy.</li>
+            <li>Applied CSS animations and interactive JavaScript elements for engagement.</li>
+            <li>Optimized for performance and accessibility across all screen sizes.</li>
+          </ul>
+          <div class="project-tech" aria-label="Technologies used">
+            <span class="tech-badge">HTML</span>
+            <span class="tech-badge">CSS</span>
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">UI/UX</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-num" aria-hidden="true">04</div>
+          <h3 class="project-title">Car Rental Responsive Landing Page</h3>
+          <ul class="project-desc">
+            <li>Designed a responsive car rental landing page with booking call-to-actions.</li>
+            <li>Implemented vehicle showcase cards, pricing highlights, and testimonial sections.</li>
+            <li>Built mobile-first layout with smooth transitions and accessibility best practices.</li>
+          </ul>
+          <div class="project-tech" aria-label="Technologies used">
+            <span class="tech-badge">HTML</span>
+            <span class="tech-badge">CSS</span>
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">Responsive Design</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" aria-label="Certifications">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Certifications</span>
+        <h2 class="section-title">Industry Recognition</h2>
+        <p class="section-sub">Verified credentials from globally recognized organizations.</p>
+      </div>
+
+      <div class="certs-grid">
+        <div class="cert-card reveal">
+          <span class="cert-badge">⭐ Verified</span>
+          <div class="cert-org">Simplilearn SkillUp</div>
+          <div class="cert-title">Git Training</div>
+          <div class="cert-details">Version control fundamentals, branching strategies, collaboration workflows. Issued April 2025.</div>
+        </div>
+        <div class="cert-card reveal">
+          <span class="cert-badge">⭐ Verified</span>
+          <div class="cert-org">GeeksforGeeks</div>
+          <div class="cert-title">Summer Skills Program — Java Full Stack</div>
+          <div class="cert-details">Comprehensive full-stack development with Java, covering front-end and back-end technologies.</div>
+        </div>
+        <div class="cert-card reveal">
+          <span class="cert-badge">🏢 Forage</span>
+          <div class="cert-org">Skyscanner</div>
+          <div class="cert-title">Front-End Software Engineering Job Simulation</div>
+          <div class="cert-details">Built a Backpack React Web Application. Hands-on real-world front-end engineering experience.</div>
+        </div>
+        <div class="cert-card reveal">
+          <span class="cert-badge">🏢 Forage</span>
+          <div class="cert-org">Walmart Global Tech</div>
+          <div class="cert-title">Advanced Software Engineering Job Simulation</div>
+          <div class="cert-details">Advanced Data Structures · Software Architecture · Relational Database Design · Data Munging.</div>
+        </div>
+        <div class="cert-card reveal">
+          <span class="cert-badge">🏢 Forage</span>
+          <div class="cert-org">Accenture</div>
+          <div class="cert-title">Developer &amp; Technology Job Simulation</div>
+          <div class="cert-details">SDLC · Agile &amp; Waterfall · Software Testing Lifecycle · Algorithmic Thinking · Code Debugging.</div>
+        </div>
+        <div class="cert-card reveal">
+          <span class="cert-badge">🏢 Forage</span>
+          <div class="cert-org">GE Aerospace</div>
+          <div class="cert-title">Explore Digital Technology Job Simulation</div>
+          <div class="cert-details">User Interface Development · Technical Requirements Documentation.</div>
+        </div>
+        <div class="cert-card reveal">
+          <span class="cert-badge">☁️ Cloud</span>
+          <div class="cert-org">AWS (Forage)</div>
+          <div class="cert-title">Solutions Architecture Job Simulation</div>
+          <div class="cert-details">Designed simple and scalable hosting architecture on Amazon Web Services.</div>
+        </div>
+        <div class="cert-card reveal">
+          <span class="cert-badge">🏆 Achievement</span>
+          <div class="cert-org">Unstop</div>
+          <div class="cert-title">Certificate of Excellence</div>
+          <div class="cert-details">Management Daily Quiz — secured Rank 920 nationwide out of thousands of participants.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" aria-label="Education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Education</span>
+        <h2 class="section-title">Academic Journey</h2>
+        <p class="section-sub">Building a strong theoretical foundation alongside practical skills.</p>
+      </div>
+
+      <div class="edu-timeline">
+        <div class="edu-item reveal">
+          <div class="edu-dot" aria-hidden="true">🎓</div>
+          <div class="edu-content">
+            <div class="edu-degree">Master of Computer Applications (MCA)</div>
+            <div class="edu-school">Integral University, Lucknow</div>
+            <div class="edu-year">2025 – 2027 · Currently Pursuing</div>
+          </div>
+        </div>
+        <div class="edu-item reveal">
+          <div class="edu-dot" aria-hidden="true">📚</div>
+          <div class="edu-content">
+            <div class="edu-degree">Bachelor of Computer Applications (BCA)</div>
+            <div class="edu-school">Previously Completed</div>
+            <div class="edu-year">Undergraduate Foundation in Computer Science</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" aria-label="Contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-info reveal">
+          <span class="section-label">Contact</span>
+          <h2>Let's Build Something Together</h2>
+          <p>I'm actively looking for Web Developer, Front-End Developer, or Software Developer internship opportunities. If you have a role or project in mind, I'd love to hear from you!</p>
+
+          <div class="contact-links">
+            <!-- FIX: Added rel="noopener noreferrer" on external links -->
+            <a href="mailto:gulamsabir28257mah@gmail.com" class="contact-link">
+              <div class="contact-link-icon" aria-hidden="true">✉</div>
+              <div class="contact-link-text">
+                <div class="contact-link-label">Email</div>
+                <div class="contact-link-value">gulamsabir28257mah@gmail.com</div>
+              </div>
+              <span aria-hidden="true">→</span>
+            </a>
+            <a href="tel:+919120558095" class="contact-link">
+              <div class="contact-link-icon" aria-hidden="true">📞</div>
+              <div class="contact-link-text">
+                <div class="contact-link-label">Phone</div>
+                <div class="contact-link-value">+91 9120558095</div>
+              </div>
+              <span aria-hidden="true">→</span>
+            </a>
+            <a href="https://linkedin.com/in/gulamsabirgzp" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <div class="contact-link-icon" aria-hidden="true">💼</div>
+              <div class="contact-link-text">
+                <div class="contact-link-label">LinkedIn</div>
+                <div class="contact-link-value">linkedin.com/in/gulamsabirgzp</div>
+              </div>
+              <span aria-hidden="true">→</span>
+            </a>
+            <a href="https://github.com/golu7860" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <div class="contact-link-icon" aria-hidden="true">🐙</div>
+              <div class="contact-link-text">
+                <div class="contact-link-label">GitHub</div>
+                <div class="contact-link-value">github.com/golu7860</div>
+              </div>
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="lang-tags" aria-label="Spoken languages">
+            <span class="lang-tag">🇬🇧 English</span>
+            <span class="lang-tag">🇮🇳 Hindi</span>
+            <span class="lang-tag">🌙 Urdu</span>
+          </div>
+        </div>
+
+        <!-- FIX: Replaced bare <div class="reveal"> with a proper semantic wrapper -->
+        <div class="contact-form-wrapper reveal">
+          <!-- FIX: Added novalidate so we control validation; added name attrs -->
+          <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
+            <div class="form-row">
+              <div class="form-group">
+                <!-- FIX: label for= linked to input id -->
+                <label class="form-label" for="fname">First Name</label>
+                <input type="text" class="form-input" id="fname" name="fname"
+                       placeholder="John" autocomplete="given-name" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="lname">Last Name</label>
+                <input type="text" class="form-input" id="lname" name="lname"
+                       placeholder="Doe" autocomplete="family-name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address</label>
+              <input type="email" class="form-input" id="email" name="email"
+                     placeholder="john@company.com" autocomplete="email" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="subject">Subject</label>
+              <input type="text" class="form-input" id="subject" name="subject"
+                     placeholder="Internship Opportunity / Project Inquiry" autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-textarea" id="message" name="message"
+                        placeholder="Tell me about the role or project..." required></textarea>
+            </div>
+            <!-- FIX: moved formMsg above button so it's read before the button in DOM order -->
+            <div class="form-msg" id="formMsg" role="alert" aria-live="assertive"></div>
+            <button type="button" class="btn-send" id="sendBtn">✉ Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer role="contentinfo">
+    <p>Designed &amp; Built by <span>Gulam Sabir</span> · Lucknow, India · 2025</p>
+    <p style="margin-top: 0.5rem; font-size: 0.78rem;">Full-Stack Developer · MCA Student · Open to Internships</p>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
