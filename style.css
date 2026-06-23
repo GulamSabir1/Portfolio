@@ -18,7 +18,7 @@
   --font-head: 'Syne', sans-serif;
   --font-body: 'DM Sans', sans-serif;
   --radius: 16px;
-  --transition: 0.3s cubic-bezier(0.4,0,0.2,1);
+  --transition: 0.45s cubic-bezier(0.4,0,0.2,1);
 }
 
 html { 
@@ -177,7 +177,7 @@ nav {
   gap: 2.5rem;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition: opacity 0.45s ease, visibility 0.45s ease;
 }
 .mobile-menu.active {
   opacity: 1;
@@ -233,14 +233,14 @@ section { position: relative; z-index: 1; }
   letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
-  animation: fadeInUp 0.6s ease both;
+  animation: fadeInUp 0.9s ease both;
 }
 
 .hero-badge .dot {
   width: 6px; height: 6px;
   background: var(--accent);
   border-radius: 50%;
-  animation: pulse 2s ease infinite;
+  animation: pulse 3s ease infinite;
 }
 
 @keyframes pulse {
@@ -255,7 +255,7 @@ section { position: relative; z-index: 1; }
   line-height: 1.05;
   letter-spacing: -0.04em;
   margin-bottom: 0.5rem;
-  animation: fadeInUp 0.7s 0.1s ease both;
+  animation: fadeInUp 1.05s 0.15s ease both;
 }
 
 .hero-name .highlight {
@@ -273,7 +273,7 @@ section { position: relative; z-index: 1; }
   color: var(--muted);
   margin-bottom: 1.5rem;
   min-height: 2em;
-  animation: fadeInUp 0.7s 0.2s ease both;
+  animation: fadeInUp 1.05s 0.3s ease both;
 }
 
 /* FIX: Typing cursor blinking indicator */
@@ -281,7 +281,7 @@ section { position: relative; z-index: 1; }
   content: '|';
   display: inline-block;
   color: var(--accent);
-  animation: blink 0.8s step-end infinite;
+  animation: blink 1.2s step-end infinite;
   margin-left: 2px;
 }
 
@@ -297,14 +297,14 @@ section { position: relative; z-index: 1; }
   line-height: 1.8;
   max-width: 480px;
   margin-bottom: 2.5rem;
-  animation: fadeInUp 0.7s 0.3s ease both;
+  animation: fadeInUp 1.05s 0.45s ease both;
 }
 
 .hero-actions {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  animation: fadeInUp 0.7s 0.4s ease both;
+  animation: fadeInUp 1.05s 0.6s ease both;
 }
 
 .btn-primary {
@@ -353,7 +353,7 @@ section { position: relative; z-index: 1; }
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fadeIn 1s 0.3s ease both;
+  animation: fadeIn 1.5s 0.45s ease both;
   position: relative;
 }
 
@@ -369,7 +369,7 @@ section { position: relative; z-index: 1; }
   inset: -4px;
   border-radius: 50%;
   background: conic-gradient(from 0deg, var(--accent), var(--accent2), #ec4899, var(--gold), var(--accent));
-  animation: spin 6s linear infinite;
+  animation: spin 9s linear infinite;
 }
 
 @keyframes spin { to { transform: rotate(360deg); } }
@@ -423,7 +423,7 @@ section { position: relative; z-index: 1; }
   font-weight: 500;
   color: var(--accent2);
   white-space: nowrap;
-  animation: float 4s ease-in-out infinite;
+  animation: float 6s ease-in-out infinite;
 }
 .float-tag:nth-child(1) { top: 10%; left: -20%; animation-delay: 0s; }
 .float-tag:nth-child(2) { top: 50%; right: -25%; animation-delay: 1s; }
@@ -439,7 +439,7 @@ section { position: relative; z-index: 1; }
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   margin-top: 3rem;
-  animation: fadeInUp 0.7s 0.5s ease both;
+  animation: fadeInUp 1.05s 0.75s ease both;
 }
 
 .stat-card {
